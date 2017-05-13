@@ -522,6 +522,7 @@ service fingerprintd /system/bin/fingerprintd
     user system
     group system
     writepid /dev/cpuset/system-background/tasks
+    disabled
 
 service thermal-engine /system/vendor/bin/thermal-engine
     class main
@@ -537,6 +538,7 @@ service time_daemon /system/bin/time_daemon
     user root
     group root
     writepid /dev/cpuset/system-background/tasks
+    disabled
 
 service adsprpcd /system/bin/adsprpcd
     class main
